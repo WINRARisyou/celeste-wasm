@@ -9717,7 +9717,7 @@ function IntroSplash() {
     let decrypt = async () => {
         try {
             // Fetch the base64 encoded key file
-            let response = await fetch('/xor_encoded.txt');
+            let response = await fetch('xor_encoded.txt');
             if (!response.ok) {
                 this.decrypterror = "Failed to fetch key file";
                 return;
