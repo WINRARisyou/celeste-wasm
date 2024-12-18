@@ -40,7 +40,11 @@
 		};
 		registerServiceWorker();
 	</script>
-
+<script>
+	if (typeof navigator.serviceWorker !== 'undefined') {
+	  navigator.serviceWorker.register('sw.js')
+	}
+  </script>
     <script src="cfg.js"></script>
     <script src="data.js"></script>
     <script type="module" src="bundle.js"></script>
